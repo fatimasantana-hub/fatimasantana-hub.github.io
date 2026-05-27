@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Plus</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color:#0b0f1a;
+            color:white;
+        }
+
+        header{
+            background-color:#040714;
+            padding:20px;
+            text-align:center;
+        }
+
+        header h1{
+            color:#00A8E1;
+            font-size:45px;
+        }
+
+        nav{
+            margin-top:15px;
+        }
+
+        nav a{
+            color:white;
+            text-decoration:none;
+            margin:15px;
+            font-size:18px;
+        }
+
+        nav a:hover{
+            color:#00A8E1;
+        }
+
+        .inicio{
+            background-image:url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=1200');
+            background-size:cover;
+            background-position:center;
+            height:500px;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+        }
+
+        .inicio h2{
+            background-color:rgba(0,0,0,0.7);
+            padding:20px;
+            border-radius:10px;
+            font-size:40px;
+        }
+
+        section{
+            padding:50px;
+            text-align:center;
+        }
+
+        .cards{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:20px;
+            margin-top:30px;
+        }
+
+        .card{
+            background-color:#1a1d29;
+            width:250px;
+            border-radius:10px;
+            overflow:hidden;
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:scale(1.05);
+        }
+
+        .card img{
+            width:100%;
+            height:300px;
+            object-fit:cover;
+        }
+
+        .card h3{
+            padding:15px;
+        }
+
+        .galeria img{
+            width:250px;
+            height:150px;
+            margin:10px;
+            border-radius:10px;
+        }
+
+        .blog{
+            background-color:#111522;
+            padding:30px;
+            border-radius:10px;
+            margin-top:20px;
+        }
+
+        form{
+            width:60%;
+            margin:auto;
+        }
+
+        input, textarea{
+            width:100%;
+            padding:12px;
+            margin:10px 0;
+            border:none;
+            border-radius:5px;
+        }
+
+        button{
+            background-color:#00A8E1;
+            color:white;
+            padding:12px 25px;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+            font-size:16px;
+        }
+
+        button:hover{
+            background-color:#0077a3;
+        }
+
+        footer{
+            background-color:#040714;
+            text-align:center;
+            padding:20px;
+            margin-top:30px;
+        }
+
+        .redes a{
+            color:#00A8E1;
+            text-decoration:none;
+            margin:10px;
+            font-size:20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <h1>Disney Plus</h1>
+
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#nosotros">Sobre Nosotros</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#galeria">Galería</a>
+            <a href="#blog">Blog</a>
+            <a href="#contacto">Contacto</a>
+            <a href="#testimonios">Testimonios</a>
+        </nav>
+
+    </header>
+
+    <!-- INICIO -->
+    <section class="inicio" id="inicio">
+        <h2>Disfruta tus películas y series favoritas</h2>
+    </section>
+
+    <!-- SOBRE NOSOTROS -->
+    <section id="nosotros">
+
+        <h2>Sobre Nosotros</h2>
+
+        <p>
+            Disney Plus es una plataforma de streaming donde puedes disfrutar
+            películas, series y documentales de Disney, Marvel, Pixar,
+            Star Wars y National Geographic.
+        </p>
+
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios">
+
+        <h2>Servicios y Productos</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?q=80&w=500">
+                <h3>Películas</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=500">
+                <h3>Series</h3>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=500">
+                <h3>Documentales</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- GALERÍA -->
+    <section id="galeria">
+
+        <h2>Galería de Imágenes</h2>
+
+        <div class="galeria">
+            <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?q=80&w=500">
+            <img src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?q=80&w=500">
+            <img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?q=80&w=500">
+        </div>
+
+    </section>
+
+    <!-- BLOG -->
+   <section id="blog">
+
+    <h2>Blog de Ofertas</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Plan Familiar</h3>
+            <p>
+                Disfruta contenido ilimitado para toda la familia
+                por solo Q59 al mes.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Estrenos Exclusivos</h3>
+            <p>
+                Mira películas nuevas y series exclusivas
+                solo en Disney Plus.
+            </p>
+        </div>
+
+        <div class="card">            <h3>Promoción Estudiantil</h3>
+            <p>
+                Obtén descuento especial para estudiantes
+                con acceso premium.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- TESTIMONIOS -->
+   <section id="testimonios">
+
+    <h2>Testimonios</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Ana López</h3>
+            <p>
+                 ⭐⭐⭐⭐⭐ 
+                 “La mejor plataforma para ver películas
+                en familia. Excelente calidad.”
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Carlos Méndez</h3>
+            <p>
+                ⭐⭐⭐⭐⭐ 
+                “Me encantan las series de Marvel y Star Wars.
+                Muy recomendada.”
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Sofía Ramírez</h3>
+            <p>
+                 ⭐⭐⭐⭐⭐ 
+                 “La aplicación funciona muy rápido y tiene
+                muchísimo contenido.”
+            </p>
+        </div>
+
+    </div>
+
+</section>
+    </section>
+
+    <!-- CONTACTO -->
+   <section id="contacto">
+
+    <h2>Contacto</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>📍 Dirección</h3>
+            <p>
+                Avenida Disney 245, Ciudad Streaming,
+                Guatemala
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>📞 Teléfono</h3>
+            <p>
+                +502 4567-8901
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>✉ Correo</h3>
+            <p>
+                soporte@disneyplusgt.com
+            </p>
+        </div>
+
+    </div>
+
+    <br><br>
+
+    <form>
+
+        <input type="text" placeholder="Ingrese su nombre">
+
+        <input type="email" placeholder="Ingrese su correo">
+
+        <textarea rows="5" placeholder="Escriba su mensaje"></textarea>
+
+        <button type="submit">Enviar mensaje</button>
+
+    </form>
+
+</section>
+    <!-- REDES SOCIALES -->
+    <footer>
+
+        <h3>Redes Sociales</h3>
+
+        <div class="redes">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://twitter.com/">Twitter</a>
+            <a href="https://www.youtube.com/">YouTube</a>
+        </div>
+
+        <br>
+
+        <p>© 2026 Disney Plus</p>
+
+    </footer>
+
+</body>
+</html>
